@@ -1,0 +1,192 @@
+/* CSS Document */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!! For Coding. Delete later !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+.red {
+    background-color: rgb(233, 62, 62);
+}
+
+.blue {
+    background-color: rgb(70, 70, 187);
+}
+
+.green {
+    background-color: rgb(85, 192, 85);
+}
+
+.yellow {
+    background-color: rgb(243, 226, 131);
+}
+
+.pink {
+    background-color: rgb(202, 88, 202);
+}
+
+.orange {
+    background-color: orange;
+}
+
+
+.grid-padding-y > .cell {
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
+    @media print, screen and (min-width: 40em) {
+      .grid-padding-y > .cell {
+        padding-top: 2rem;
+        padding-bottom: 2rem; } }
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+1.0 - Typography
+	1.1 - Headings
+	1.2 - Body Copy
+	1.3 - Buttons
+	1.4 - Forms
+	1.5 - Lists
+	1.6 - Tables
+2.0 - Navigation Menus
+	2.1 - Main
+	2.2 - Sub
+	2.3 - Footer
+3.0 - Content
+	3.1 - Site Structure (Site Header, Advertisement, Site Footer)
+    3.2 - Section Name
+    3.3 - Section Name
+4.0 - Media
+5.0 - Utility
+	5.1 - Background Colors
+    5.2 - Text Colors
+    5.3 - Text Sizes
+    5.4 - Alignments
+6.0 - Media Queries
+
+--------------------------------------------------------------*/
+
+html {
+	font-size: 17px;
+}
+
+/*--------------------------------------------------------------
+1.0 - Typography
+-------------------------------------------------------------- */
+
+/*--- 1.1 Headings ---*/
+/*--- 1.2 - Body Copy ---*/
+/*--- 1.3 - Buttons ---*/
+/*--- 1.4 - Forms ---*/
+/*--- 1.5 - Lists ---*/
+/*--- 1.6 - Tables ---*/
+
+
+/*--------------------------------------------------------------
+2.0 - Navigation Menus
+-------------------------------------------------------------- */
+
+/*--- 2.1 - Main ---*/
+
+
+/*--- 2.2 - Sub ---*/
+/*--- 2.3 - Footer ---*/
+
+/*--------------------------------------------------------------
+3.0 - Content
+-------------------------------------------------------------- */
+
+/*--- 3.1 - Site Structure (Site Header, Advertisement, Site Footer) ---*/
+footer li {
+    list-style-type: none;
+}
+/*--- 3.2 - Home ---*/
+/*--- 3.3 - Services ---*/
+/*--- 3.4 - Providers ---*/
+/*--- 3.5 - FAQ ---*/
+.accordion-title::before {
+    content: '';
+    border: inset 6px; 
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-bottom-width: 0;
+    border-right-color: transparent;
+    border-top-color: rgb(23, 121, 186);
+    border-top-style: solid;
+    margin-top: -0.25rem;
+}
+.is-active > .accordion-title::before {
+    content: '';
+    border: inset 6px; 
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-top-width: 0;
+    border-right-color: transparent;
+    border-bottom-color: rgb(23, 121, 186);
+    border-bottom-style: solid;
+    border-bottom-style: solid;
+    margin-top: -0.25rem;
+}
+/*--- 3.6 - Contact ---*/
+
+
+
+
+/*--------------------------------------------------------------
+4.0 - Media
+-------------------------------------------------------------- */
+
+footer i {
+    display: inline;
+}
+
+.title-bar-title img, .top-bar-left img {
+    width: 8rem;
+}
+
+/*--------------------------------------------------------------
+5.0 - Utility
+-------------------------------------------------------------- */
+
+/*--- 5.1 - Background Colors ---*/
+/*--- 5.2 - Text Colors ---*/
+/*--- 5.3 - Text Sizes ---*/
+/*--- 5.4 - Alignments ---*/
+
+.callout {
+    margin-bottom: 0;
+}
+
+.title-bar-title, .top-bar-left.hide-for-small-only {
+    flex: 1;
+}
+
+/*--------------------------------------------------------------
+6.0 - Media Queries
+-------------------------------------------------------------- */
+
+@media screen and ( min-width: 40em ) { /*medium */
+    .order-one-medium {
+        order: 1;
+    }
+    .order-two-medium {
+        order: 2;
+    }
+    .order-three-medium {
+        order: 3;
+    }
+    
+    
+
+
+}
+
+@media screen and ( min-width: 64em ) { /*large*/
+    .order-one-large {
+        order: 1;
+    }
+    .order-two-large {
+        order: 2;
+    }
+    
+}
+
