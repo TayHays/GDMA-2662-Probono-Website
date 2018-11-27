@@ -192,7 +192,6 @@ footer li {
 /*--- 3.3 - Services ---*/
 /*--- 3.4 - Providers ---*/
 /*--- 3.5 - FAQ ---*/
-
 .accordion-title::before {
     content: '';
     border: inset 6px; 
