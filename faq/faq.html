@@ -5,15 +5,14 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services</title>
+  <title>FAQ's</title>
   <link rel="stylesheet" href="../css/foundation.css">
   <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
-  
-   
-	<div>
+  <header class="full"><!-- insert hero image here in css. -->
+    <div>
       <nav class="grid-container">
         <div class="title-bar align-justify" data-responsive-toggle="navigation" data-hide-for="medium">
           <div class="title-bar-title"><a href="#"><img src="../img/catalyst-logo.png" alt="Catalyst Behavioral Health logo"></a></div>
@@ -24,7 +23,7 @@
           <div class="top-bar-right">
             <ul class="dropdown menu text-right" data-dropdown-menu>
               <li><a href="../index.html">Home</a></li>
-              <li><a href="#">Services</a></li>
+              <li><a href="../services/services.html">Services</a></li>
               <li>
                 <a href="../providers/providers.html">Providers</a>
                 <ul class="menu vertical">
@@ -35,107 +34,88 @@
                   <li><a href="../providers/christina-spinazzola.html">Christina Spinazzola</a></li>
                 </ul>
               </li>
-              <li><a href="../faq/faq.html">FAQ</a></li>
+              <li><a href="#">FAQ</a></li>
               <li><a href="../contact/contact.html">Contact</a></li>
             </ul>
           </div>
         </div>
       </nav>
-      
     </div>
     <div class="grid-container">
-      <h1>Services</h1>
+      <h1>FAQ's</h1>
       <div class="grid-x">
         <div class="cell medium-8"></div>
-        <p>Our providers offer a variety of services for various mental health needs.</p>
-        <p>For a complete list of services provided, please view <span> <a href="../providers/providers.html">Our
-              Providers</a></span> page</p>
+        <p>For frequently-asked billing questions, see below. You may also view our <a href="#policies">office policies</a>.</p>
+        <p>For all other questions, please call our office manager at <span><a href="tel:14022618313">402.261.8313</a></span></p>
       </div>
     </div>
   </header>
 
-  <!-- Services -->
-  <div>
-    <!--change background color-->
-    <div class="grid-container">
+  <!-- FAQ's -->
+  <section class="grid-container">
+    <header>
+      <h2>Frequently Asked Billing Questions</h2>
+    </header>
+      <ul class="accordion" data-accordion data-allow-all-closed="true">
+          <li class="accordion-item is-active" data-accordion-item>
+            <a href="#" class="accordion-title">What billing or insurance information will I receive?</a> 
+            <div class="accordion-content" data-tab-content>
+              <p>You will receive a copy of your bill. After your insurance has paid, we'll provide you with a monthly statement of your account.</p>
+            </div>
+          </li>
+          <li class="accordion-item" data-accordion-item>
+              <a href="#" class="accordion-title">How long will it take to get things settled with the insurance company?</a> 
+              <div class="accordion-content" data-tab-content>
+                <p>Generally, it takes from 45 to 60 days to obtain payment from an insurance carrier.</p>
+              </div>
+            </li>
+            <li class="accordion-item" data-accordion-item>
+                <a href="#" class="accordion-title">How long will it take to get things settled with the insurance company?</a> 
+                <div class="accordion-content" data-tab-content>
+                  <p>If we have received any such information from your insurance company, we'll be glad to share it with you. However, for answers to any questions about insurance payments, deductibles, or co-payments, you generally need to check with your insurance company.</p>
+                </div>
+              </li>
+              <li class="accordion-item" data-accordion-item>
+                  <a href="#" class="accordion-title">​​If I have questions about my bill, who can I talk to?</a> 
+                  <div class="accordion-content" data-tab-content>
+                    <p>Please contact our office manager, Gina Pashby at <span><a href="tel:14022618313">402.261.8313</a></span> for any questions about your bill. She would be happy to assist you.</p>
+                  </div>
+                </li>
+          
+        </ul>
+      </section>
+
+  <!-- Office Policies -->
+  <div id="policies"><!--change background color-->
+    <section class="grid-container">
+      <header>
+        <h2>Office Policies</h2>
+      </header>
       <div class="grid-x grid-margin-x grid-margin-y">
-        <section class="cell medium-4 orange">
-          <header>
-            <h3>Neuropsychology</h3>
-          </header>
-          <p>Neuropsychological testing is an important component of the assessment and treatment of
-            traumatic brain injury, dementia, neurological conditions, and psychiatric disorders. It is also
-            used to examine the effects of toxic substances and medical conditions on brain function.</p>
-        </section>
-        <section class="cell medium-4 orange">
-          <header>
-            <h3>Concussion Testing</h3>
-          </header>
-          <p>Concussion testing
-            includes ImPACT (Immediate Post-Concussion Assessment and Cognitive Testing), an online neurocognitive
-            assessment.
-            It also includes baseline testing and post-injury testing which are used together to determine
-            if a patient can safely return to physical activity.</p>
-        </section>
-        <section class="cell medium-4 orange">
-          <header>
-            <h3>EMDR for Trauma & PTSD</h3>
-          </header>
-          <p>Eye Movement Desensitization and Reprocessing, or EMDR is a structured therapy which helps clients
-            reduce the vividness and emotions associated with traumatic memories.</p>
-        </section>
-        <section class="cell medium-4 orange">
+          <section class="cell medium-4 orange">
             <header>
-              <h3>CBT</h3>
+              <h3>Payment Policy</h3>
             </header>
-            <p>Cognitive-Behavioral Therapy, or CBT, is a form of psychotherapy that treats problems and boosts happiness by modifying dysfunctional 
-              emotions, behaviors, and thoughts. CBT aims to identify harmful thoughts, assess whether they are an accurate depiction of reality, 
-              and if they are not, employs strategies to challenge and overcome them.</p>
+            <p>Our services are billed by Catalyst Behavioral Health or by an affiliate billing company. Our providers participate in most all of the major health insurance plans in the region. Please be aware that with any health plan there may be deductibles and co-payments for which you could be responsible. In our office, payment is expected at the time of service.</p>
           </section>
-        <section class="cell medium-4 orange">
-          <header>
-            <h3>Substance Abuse</h3>
-          </header>
-          <p>We treat subtance abuse disorders</p>
-        </section>
-        <section class="cell medium-4 orange">
-          <header>
-            <h3>Mood Disorders</h3>
-          </header>
-          <p>Providing therapy for Anxiety, Depression, and other mood disorders</p>
-        </section>
-        <section class="cell medium-4 orange">
-          <header>
-            <h3>Couples Therapy</h3>
-          </header>
-          <p>Description</p>
-        </section>
-        <section class="cell medium-4 orange">
-          <header>
-            <h3>Family Conflict & Grief</h3>
-          </header>
-          <p>Description</p>
-        </section>
-        <section class="cell medium-4 orange">
-          <header>
-            <h3>LGBTQ Support</h3>
-          </header>
-          <p>Description</p>
-        </section>
-      </div>
-    </div>
-  </div>
-  <div class="callout">
-    <!--add border as a before element in CSS-->
-    <div class="red grid-container text-center">
-      <p>We do not offer medication services &hellip; </p>
-      <p>However, our providers do work closely with an offsite provider for
-        medication management services, should they be needed.
-    </div>
+          <section class="cell medium-4 orange">
+            <header>
+              <h3>Cancellation Policy</h3>
+            </header>
+            <p>We ask that all clients kindly notify us at least 24 hours in advance. If you are unable to give us 24 hours notice, your account will be billed $50. This fee is not covered by insurance and must be paid before your next appointment. This policy many not apply to Medicare clients. Thank you for your understanding.</p>
+          </section>
+          <section class="cell medium-4 orange">
+            <header>
+              <h3>Weather Policy</h3>
+            </header>
+            <p>If Lincoln Public Schools are closed due to inclement weather, our office will be closed as well. Some providers may choose to still see clients. Please check with your provider directly for more information.</p>
+          </section>
+        </div>
+      
+    </section>
   </div>
   <!-- Page Footer -->
-  <footer class="blue">
-    <!--add background color-->
+  <footer class="blue"><!--add background color-->
     <div class="grid-container">
       <div class="grid-x grid-margin-x">
         <div class="cell order-two-large large-7">
@@ -144,7 +124,7 @@
               <p>Call for an appointment <span><a href="tel:+14022618313">402.261.8313</a></span></p>
               <p>After Hours Crisis Line <span><a href="tel:+18002474941">1.800.247.4941</a></span></p>
               <p>Find us on Facebook <a href="https://www.facebook.com/catalystbehavioralhealth/" target="_blank">
-                  <i class="fab fa-facebook-f" data-fa-transform="shrink-5" data-fa-mask="fas fa-circle"></a></i></p>
+                <i class="fab fa-facebook-f" data-fa-transform="shrink-5" data-fa-mask="fas fa-circle"></a></i></p>
               <div class="cell large-4 large-text-right show-for-large">
                 <nav class="footer-nav">
                   <h4>Quick Links</h4>
@@ -176,7 +156,7 @@
         <div id="map" class="cell order-one-large large-5">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.212719701468!2d-96.6856889928005!3d40.75734588749299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x879695f2ddaecdf1%3A0x28d02e11d3c62b4a!2s5539+S+27th+St%2C+Lincoln%2C+NE+68512!5e0!3m2!1sen!2sus!4v1542658377602"
             width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
+         </div>
       </div>
     </div>
   </footer>
