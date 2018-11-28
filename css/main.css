@@ -375,26 +375,15 @@ li.drop-down>ul{
 }
 
 @media screen and ( min-width: 40em ) { /*medium */
-    .order-one-medium {
-        order: 1;
-    }
-    .order-two-medium {
-        order: 2;
-    }
-    .order-three-medium {
-        order: 3;
-    }
     
+    .drop-down-ul {
+        top: 76px;
+    }
 
 }
 
 @media screen and ( min-width: 64em ) { /*large*/
-    .order-one-large {
-        order: 1;
-    }
-    .order-two-large {
-        order: 2;
-    }
+    
     
 }
 

@@ -11,22 +11,22 @@
 </head>
 
 <body>
-  <header class="full"><!-- insert hero image here in css. -->
-    <div>
+  <header>
+    <div class="navbar">
       <nav class="grid-container">
         <div class="title-bar align-justify" data-responsive-toggle="navigation" data-hide-for="medium">
-          <div class="title-bar-title"><a href="#"><img src="../img/catalyst-logo.png" alt="Catalyst Behavioral Health logo"></a></div>
-          <button class="menu-icon" type="button" data-toggle="navigation"></button>
+          <div class="title-bar-title"><a href="../index.html"><img src="../img/catalyst-logo.png" alt="Catalyst Behavioral Health"></a></div>
+          <button class="menu-icon toggle-menu visible-xs-block" type="button" data-toggle="navigation"></button>
         </div>
-        <div class="top-bar" id="navigation" data-animate="hinge-in-from-top hinge-out-from-top">
-          <div class="top-bar-left hide-for-small-only"><a href="#"><img src="../img/catalyst-logo.png" alt="Catalyst Behavioral Health logo"></a></div>
-          <div class="top-bar-right">
-            <ul class="dropdown menu text-right" data-dropdown-menu>
+        <div class="top-bar" id="navigation" data-animate="fade-in hinge-out-from-top">
+          <div class="top-bar-left hide-for-small-only"><a href="../index.html"><img src="../img/catalyst-logo.png" alt="Catalyst Behavioral Health"></a></div>
+          <div class="top-bar">
+            <ul class="exo-menu">
               <li><a href="../index.html">Home</a></li>
               <li><a href="../services/services.html">Services</a></li>
-              <li>
+              <li class="drop-down">
                 <a href="../providers/providers.html">Providers</a>
-                <ul class="menu vertical">
+                <ul class="drop-down-ul" data-animate="fade-in">
                   <li><a href="../providers/tracy-kalnins.html">Dr. Tracy Kalnins</a></li>
                   <li><a href="../providers/eric-harmes.html">Eric Harmes</a></li>
                   <li><a href="../providers/kendra-hubbard.html">Kendra Hubbard</a></li>
@@ -35,7 +35,7 @@
                 </ul>
               </li>
               <li><a href="../faq/faq.html">FAQ</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a class="active" href="#">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -45,11 +45,12 @@
       <h1>Contact</h1>
       <div class="grid-x">
         <div class="cell medium-8">
-        <p>For an appointment, call Gina Pashby at <span><a href="tel:14022618313">402.261.8313</a></span></p>
-        <p>For an after-hours emergency, please call <span><a href="tel:+18002474941">1.800.247.4941</a></span></p>
-        <p><i>Please Note:</i> Our office manager is not always in the office. If you have an appointment, please wait in the waiting room and your provider will be with you shortly.</p>
+          <p>For an appointment, call Gina Pashby at <span><a href="tel:14022618313">402.261.8313</a></span></p>
+          <p>For an after-hours emergency, please call <span><a href="tel:+18002474941">1.800.247.4941</a></span></p>
+          <p><i>Please Note:</i> Our office manager is not always in the office. If you have an appointment, please
+            wait in the waiting room and your provider will be with you shortly.</p>
+        </div>
       </div>
-    </div>
   </header>
 
   <!-- Contact Info and Business Hours-->
@@ -69,7 +70,8 @@
               <i class="fab fa-facebook-f" data-fa-transform="shrink-5" data-fa-mask="fas fa-circle"></a></i></p>
         </section>
       </div>
-      <div class="cell medium-5"><!--add background color and border in css-->
+      <div class="cell medium-5">
+        <!--add background color and border in css-->
         <header>
           <h3>Office Hours</h3>
         </header>
@@ -102,7 +104,8 @@
   </div>
 
   <!-- Form -->
-  <div id="form"><!--change background color-->
+  <div id="form">
+    <!--change background color-->
     <section class="grid-container">
       <header>
         <h2>Send Us a Message</h2>
@@ -139,7 +142,7 @@
                 <textarea rows="5" name="message"></textarea>
               </label>
               <div class="medium-text-right input-group-button">
-                      <input type="submit" class="button" value="Submit"><!-- link?? -->
+                <input type="submit" class="button" value="Submit"><!-- link?? -->
               </div>
             </div>
       </form>
@@ -164,6 +167,7 @@
     </div>
   </footer>
 
+  <!-- Script -->
   <script src="../js/vendor/jquery.js"></script>
   <script src="../js/vendor/what-input.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0"
