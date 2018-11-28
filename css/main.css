@@ -112,4 +112,47 @@ html {
 
 /*--------------------------------------------------------------
 6.0 - Media Queries
+
 -------------------------------------------------------------- */
+
+@media (max-width:40em){ /* small */
+
+	.exo-menu {
+		min-height: 58px;
+		width: 100%;
+	}
+	
+	.exo-menu > li > a{
+		width:100% ;
+	    display:none ;
+	
+	}
+	.exo-menu > li{
+		width:100%;
+	}
+	.display.exo-menu > li > a{
+	  display:block ;
+	  	padding: 20px 22px;
+	}
+	
+li.drop-down>ul{
+        position:relative;
+        
+}
+
+@media screen and ( min-width: 40em ) { /*medium */
+    
+    .drop-down-ul {
+        top: 76px;
+    }
+
+}
+
+@media screen and ( min-width: 64em ) { /*large*/
+    
+    
+}
+
+
+-------------------------------------------------------------- */
+
