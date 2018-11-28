@@ -2,7 +2,6 @@
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!! For Coding. Delete later !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
-
 .red {
     background-color: rgb(233, 62, 62);
 }
@@ -56,7 +55,6 @@
     3.2 - Section Name
     3.3 - Section Name
 4.0 - Media
-    4.1 - Orbit
 5.0 - Utility
 	5.1 - Background Colors
     5.2 - Text Colors
@@ -66,94 +64,19 @@
 
 --------------------------------------------------------------*/
 
-/*font-family: 'Noto Serif', serif;
-font-family: 'Noto Sans KR', sans-serif;*/
-
 html {
-    font-size: 17px;
-}
-
-* {
-    font-family: 'Noto Sans KR', sans-serif;
+	font-size: 17px;
 }
 
 /*--------------------------------------------------------------
 1.0 - Typography
 -------------------------------------------------------------- */
-h1, h1 span, body > .callout p:first-child, h2, h4 {
-    font-family: 'Noto Serif', serif;
-}
-
-h1, body > .callout p:first-child {
-    font-style: italic;
-}
-
-p, body > .callout h2, h4 {
-    color: #16292b;
-}
-
-h1 span, h2, h3 {
-    color: #095369;
-}
-
-h1 {
-    color: #497886;
-}
-
-h2, body > .callout p:first-child {
-    font-size: 3rem;
-}
-
-nav li a, footer p, footer a, h4 {
-    color: #fff;
-}
-
-nav li a, .button, h3, h4, form label, footer li a, .uppercase {
-    text-transform: uppercase;
-}
-
-p a {
-    font-weight: 700;
-}
 
 /*--- 1.1 Headings ---*/
-h1 {
-    font-size: 4rem;
-}
-
-h1 span {
-    font-size: 6rem;
-    font-style: normal;
-}
-
-h3 {
-    font-size: 1.25rem;
-}
-
-h4 {
-    font-size: 1rem;
-}
-
-
-
 /*--- 1.2 - Body Copy ---*/
-
-nav li a, .button, form label {
-    font-size: .7rem;
-    letter-spacing: 2px;
-}
-
-footer {
-    font-size: .85rem;
-}
 /*--- 1.3 - Buttons ---*/
 /*--- 1.4 - Forms ---*/
 /*--- 1.5 - Lists ---*/
-
-ul{
-	list-style:none;
-}
-
 /*--- 1.6 - Tables ---*/
 
 
@@ -162,96 +85,6 @@ ul{
 -------------------------------------------------------------- */
 
 /*--- 2.1 - Main ---*/
-
-.drop-down-ul, .exo-menu {
-    margin-left: 0;
-}
-
-.exo-menu{
-	width: 100%;
-	float: left;
-	list-style: none;
-	position:relative;
-}
-
-.exo-menu > li {	display: inline-block;float:left;}
-.exo-menu > li > a {
-	text-decoration: none;
-	-webkit-transition: color 0.2s linear, background 0.2s linear;
-	-moz-transition: color 0.2s linear, background 0.2s linear;
-	-o-transition: color 0.2s linear, background 0.2s linear;
-	transition: color 0.2s linear, background 0.2s linear;
-}
-
-.exo-menu > li > a.active,
-.exo-menu > li > a:hover,
-li.drop-down ul > li > a:hover {
-	background:#aabfc1;
-	color:#16292b;
-}
-
-.exo-menu i {
-  float: left;
-  margin-right: 6px;
-  line-height: 20px !important;
-}
-
-li.drop-down {
-    position:relative;
-}
-
-li.drop-down:before {
-  content: "\f103";
-  color: #fff;
-  font-family: FontAwesome;
-  font-style: normal;
-  display: inline;
-  position: absolute;
-  right: 6px;
-  top: 20px;
-  font-size: 14px;
-}
-
-li.drop-down>ul{
-	left: 0px;
-	min-width: 230px;
-}
-
-.drop-down-ul {
-    display:none;
-}
-
-li.drop-down>ul>li>a {
-	color: #fff;
-	display: block;
-	padding: 20px 22px;
-	text-decoration: none;
-	background-color: #e7f1f2;
-	border-bottom: 1px dotted #547787;
-	-webkit-transition: color 0.2s linear, background 0.2s linear;
-	-moz-transition: color 0.2s linear, background 0.2s linear;
-	-o-transition: color 0.2s linear, background 0.2s linear;
-	transition: color 0.2s linear, background 0.2s linear;
-}
-
-.drop-down-ul:hover, li.drop-down>a:hover +.drop-down-ul {
-	display:block;
-}
-
-	.exo-menu > li > a{
-	display:block;
-	padding: 20px 22px;
- }
-
-li.drop-down>ul{
-		position:absolute;
-}
-
-.navbar, .top-bar, .top-bar ul, .title-bar {
-    background-color: #2c5a68;
-}
-
-
 /*--- 2.2 - Sub ---*/
 /*--- 2.3 - Footer ---*/
 
@@ -260,73 +93,12 @@ li.drop-down>ul{
 -------------------------------------------------------------- */
 
 /*--- 3.1 - Site Structure (Site Header, Advertisement, Site Footer) ---*/
-footer li {
-    list-style-type: none;
-}
-/*--- 3.2 - Home ---*/
-/*--- 3.3 - Services ---*/
-/*--- 3.4 - Providers ---*/
-/*--- 3.5 - FAQ ---*/
-
-.accordion-title::before {
-    content: '';
-    border: inset 6px; 
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-    border-bottom-width: 0;
-    border-right-color: transparent;
-    border-top-color: rgb(23, 121, 186);
-    border-top-style: solid;
-    margin-top: -0.25rem;
-}
-.is-active > .accordion-title::before {
-    content: '';
-    border: inset 6px; 
-    border-top-color: transparent;
-    border-left-color: transparent;
-    border-top-width: 0;
-    border-right-color: transparent;
-    border-bottom-color: rgb(23, 121, 186);
-    border-bottom-style: solid;
-    border-bottom-style: solid;
-    margin-top: -0.25rem;
-}
-/*--- 3.6 - Contact ---*/
-
-
-
+/*--- 3.2 - Section Name ---*/
+/*--- 3.3 - Section Name ---*/
 
 /*--------------------------------------------------------------
 4.0 - Media
 -------------------------------------------------------------- */
-
-footer i {
-    display: inline;
-}
-
-.title-bar-title img, .top-bar-left img {
-    width: 8rem;
-}
-
-/*--- 4.1 - Orbit ---*/
-
-.orbit-slide:first-child {
-    background: url(https://placehold.it/1200x600/999?text=Slide-1); 
-}
-
-.orbit-slide:nth-child(2) {
-    background: url(https://placehold.it/1200x600/999?text=Slide-2); 
-}
-
-.orbit-slide:nth-child(3) {
-    background: url(https://placehold.it/1200x600/999?text=Slide-3); 
-}
-
-.orbit-slide {
-    width: 100%;
-    height: 100vh;
-    z-index: -1;
-}
 
 /*--------------------------------------------------------------
 5.0 - Utility
@@ -337,16 +109,10 @@ footer i {
 /*--- 5.3 - Text Sizes ---*/
 /*--- 5.4 - Alignments ---*/
 
-.callout {
-    margin-bottom: 0;
-}
-
-.title-bar-title, .top-bar-left.hide-for-small-only {
-    flex: 1;
-}
 
 /*--------------------------------------------------------------
 6.0 - Media Queries
+
 -------------------------------------------------------------- */
 
 @media (max-width:40em){ /* small */
@@ -386,4 +152,7 @@ li.drop-down>ul{
     
     
 }
+
+
+-------------------------------------------------------------- */
 
