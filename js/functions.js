@@ -1,6 +1,17 @@
 $(document).foundation()
 
 
+	 
+	
+$(function () {
+    $('.toggle-menu').click(function(){
+       $('.exo-menu').toggleClass('display');
+       
+    });
+    
+   });
+   
+     
 
 // Initialize and add the map !! Delete if not needed
 function initMap() {
