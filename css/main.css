@@ -1,0 +1,502 @@
+/* CSS Document */
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+1.0 - Typography
+	1.1 - Headings
+	1.2 - Body Copy
+	1.3 - Buttons
+	1.4 - Forms
+	1.5 - Lists
+	1.6 - Tables
+2.0 - Navigation Menus
+	2.1 - Main
+	2.2 - Sub
+	2.3 - Footer
+3.0 - Content
+	3.1 - Site Structure (Site Header, Advertisement, Site Footer)
+    3.2 - Section Name
+    3.3 - Section Name
+4.0 - Media
+    4.1 - Orbit
+5.0 - Utility
+	5.1 - Background Colors
+    5.2 - Text Colors
+    5.3 - Text Sizes
+    5.4 - Alignments
+6.0 - Media Queries
+
+--------------------------------------------------------------*/
+
+/*font-family: 'Noto Serif', serif;
+font-family: 'Noto Sans KR', sans-serif;*/
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*--------------------------------------------------------------
+1.0 - Typography
+-------------------------------------------------------------- */
+h1, h1 span, body > .callout p:first-child, h2, h4 {
+    font-family: 'Noto Serif', serif;
+}
+
+h1, body > .callout p:first-child {
+    font-style: italic;
+}
+
+p, body > .callout h2, h4, p a, .close-button, .card h3 {
+    color: #16292b;
+}
+
+h1 span, h2, h3, .button {
+    color: #095369;
+}
+
+h1 {
+    color: #547787; 
+}
+
+footer p a:hover, footer ul a:hover, .exo-menu > li > a.active {
+    color: #c6a24a;
+}
+
+h2, body > .callout p:first-child {
+    font-size: 1.5rem;
+}
+
+nav li a, footer p, footer a, h4, p a:hover, .close-button:hover, .button:hover {
+    color: #fff;
+}
+
+nav li a, .button, h3, h4, form label, footer li a, .uppercase {
+    text-transform: uppercase;
+}
+
+p a, nav li a, .button, h3, h4 {
+    font-weight: 900;
+}
+
+
+
+/*--- 1.1 Headings ---*/
+h1 {
+    font-size: 2rem;
+}
+
+h1 span {
+    font-size: 3rem;
+    font-style: normal;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+
+
+/*--- 1.2 - Body Copy ---*/
+
+nav li a, .button, form label {
+    font-size: .7rem;
+    letter-spacing: 2px;
+}
+
+footer {
+    font-size: .85rem;
+}
+/*--- 1.3 - Buttons ---*/
+
+.button {
+    background-color: transparent;
+    border: solid 1px #095369;
+    border-radius: 0px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+/*--- 1.4 - Forms ---*/
+/*--- 1.5 - Lists ---*/
+
+ul{
+	list-style:none;
+}
+
+/*--- 1.6 - Tables ---*/
+
+
+/*--------------------------------------------------------------
+2.0 - Navigation Menus
+-------------------------------------------------------------- */
+
+/*--- 2.1 - Main ---*/
+
+.drop-down-ul, .exo-menu {
+    margin-left: 0;
+}
+
+.exo-menu{
+	width: 100%;
+	float: left;
+	list-style: none;
+    position:relative;
+}
+
+.exo-menu > li {	display: inline-block;float:left;}
+.exo-menu > li > a {
+	text-decoration: none;
+	-webkit-transition: color 0.2s linear, background 0.2s linear;
+	-moz-transition: color 0.2s linear, background 0.2s linear;
+	-o-transition: color 0.2s linear, background 0.2s linear;
+	transition: color 0.2s linear, background 0.2s linear;
+}
+
+.exo-menu > li > a:hover,
+li.drop-down ul > li > a:hover {
+	color:#16292b;
+}
+
+.exo-menu > li > .active:hover {
+    color: #c6a24a;
+    background-color: transparent;    
+}
+
+.exo-menu i {
+  float: left;
+  margin-right: 6px;
+  line-height: 20px !important;
+}
+
+li.drop-down {
+    position:relative;
+    margin-right: 1rem;
+}
+
+li.drop-down:before {
+  color: #fff;
+  display: inline;
+  position: absolute;
+  right: 6px;
+  top: 20px;
+}
+
+li.drop-down>ul{
+	left: 0px;
+	min-width: 230px;
+}
+
+.drop-down-ul {
+    display:none;
+}
+
+li.drop-down>ul>li>a {
+	color:#16292b;
+	display: block;
+	padding: 20px 22px;
+	text-decoration: none;
+	background-color: #e7f1f2;
+	border-bottom: 1px dotted #547787;
+	-webkit-transition: color 0.2s linear, background 0.2s linear;
+	-moz-transition: color 0.2s linear, background 0.2s linear;
+	-o-transition: color 0.2s linear, background 0.2s linear;
+	transition: color 0.2s linear, background 0.2s linear;
+}
+
+.drop-down-ul:hover, li.drop-down>a:hover +.drop-down-ul {
+	display:block;
+}
+
+	.exo-menu > li > a{
+	display:block;
+	padding: 20px 22px;
+ }
+
+li.drop-down>ul{
+		position:absolute;
+}
+
+
+
+
+
+
+/*--- 2.2 - Sub ---*/
+/*--- 2.3 - Footer ---*/
+
+/*--------------------------------------------------------------
+3.0 - Content
+-------------------------------------------------------------- */
+body {
+    background-color: #f8f5ed;
+}
+
+.callout, .card {
+    background-color: #e5d8a1;
+}
+
+.navbar, .top-bar, .top-bar ul, .title-bar, body > footer, .button:hover {
+    background-color: #2c5a68;
+}
+
+.exo-menu > li > a:hover, li.drop-down ul > li > a:hover, body > header .callout {
+    background-color:#aabfc1;
+}
+
+body > div, body > section, body > header, body > footer {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+body > .callout {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+
+/*--- 3.1 - Site Structure (Site Header, Advertisement, Site Footer) ---*/
+footer li {
+    list-style-type: none;
+}
+
+body > header {
+    padding-top: 0;
+}
+
+footer svg {
+    font-size: 2rem;
+}
+
+/*--- 3.2 - Home ---*/
+
+
+/*--- 3.3 - Services ---*/
+/*--- 3.4 - Providers ---*/
+/*--- 3.5 - FAQ ---*/
+
+.accordion-title::before, nav li.drop-down::before {
+    content: '';
+    border: inset 6px; 
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-bottom-width: 0;
+    border-right-color: transparent;
+    border-top-color: rgb(23, 121, 186);
+    border-top-style: solid;
+    margin-top: -0.25rem;
+}
+
+nav li.drop-down::before {
+    margin-top: .3rem;
+    border-top-color: #fff;
+}
+
+.is-active > .accordion-title::before {
+    content: '';
+    border: inset 6px; 
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-top-width: 0;
+    border-right-color: transparent;
+    border-bottom-color: rgb(23, 121, 186);
+    border-bottom-style: solid;
+    border-bottom-style: solid;
+    margin-top: -0.25rem;
+}
+/*--- 3.6 - Contact ---*/
+
+
+
+
+/*--------------------------------------------------------------
+4.0 - Media
+-------------------------------------------------------------- */
+
+footer i {
+    display: inline;
+}
+
+.title-bar-title img, .top-bar-left img {
+    width: 8rem;
+}
+
+footer iframe {
+    height: 100%;
+    width: 100%;
+}
+
+/*--- 4.1 - Orbit ---*/
+
+.orbit-slide:first-child {
+    background: url(https://placehold.it/1200x600/999?text=Slide-1); 
+}
+
+.orbit-slide:nth-child(2) {
+    background: url(https://placehold.it/1200x600/999?text=Slide-2); 
+}
+
+.orbit-slide:nth-child(3) {
+    background: url(https://placehold.it/1200x600/999?text=Slide-3); 
+}
+
+.orbit-slide {
+    width: 100%;
+    height: 30rem;
+    background-size: cover;
+}
+
+body > header {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+header .position {
+    position: absolute;
+    top: 15rem;
+    left: auto;
+    width: 100%;
+}
+
+/*--------------------------------------------------------------
+5.0 - Utility
+-------------------------------------------------------------- */
+
+/*--- 5.1 - Background Colors ---*/
+/*--- 5.2 - Text Colors ---*/
+/*--- 5.3 - Text Sizes ---*/
+/*--- 5.4 - Alignments ---*/
+
+.callout, body > header .callout p, .exo-menu {
+    margin-bottom: 0;
+}
+
+
+.title-bar-title, .top-bar-left.hide-for-small-only {
+    flex: 1;
+}
+
+.orbit, .position {
+    z-index: -1;
+}
+
+.card {
+    padding: 1.5rem;
+}
+
+.frame {
+    outline: 1px solid #f8f5ed;
+    outline-offset: -.5rem;
+}
+
+.outline {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+ .outline::after {
+    content: '';
+    background: transparent;
+    border: 1px solid #c6a24a;
+    top: 30%;
+    right: -.5rem;
+    bottom: 0;
+    left: -.5rem;
+    position: absolute;
+    z-index: -1;
+  }
+
+body > .callout > div::before {
+    content: '';
+    border: 1px solid #c6a24a;
+    top: -2rem;
+    right: 20%;
+    bottom: -2rem;
+    left: 20%;
+    position: absolute;
+    z-index: -1;
+    
+}
+
+/*--------------------------------------------------------------
+6.0 - Media Queries
+-------------------------------------------------------------- */
+
+@media (max-width:40em){ /* small */
+
+	.exo-menu {
+		min-height: 58px;
+		width: 100%;
+	}
+	
+	.exo-menu > li > a{
+		width:100% ;
+	    display:none ;
+	
+	}
+	.exo-menu > li{
+		width:100%;
+	}
+	.display.exo-menu > li > a{
+	  display:block ;
+	  	padding: 20px 22px;
+	}
+	
+    li.drop-down>ul {
+        position:relative;
+    }
+    
+    
+    
+}
+
+@media screen and ( min-width: 40em ) { /*medium */
+    
+    
+
+    /* Typography */
+
+    h2, body > .callout p:first-child {
+        font-size: 2.2rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+    
+    h1 span {
+        font-size: 6rem;
+        font-style: normal;
+    }
+    
+    h3 {
+        font-size: 1.25rem;
+    }
+    
+    h4 {
+        font-size: 1rem;
+    }
+
+    .cell-group .cell:last-child img {
+        margin-top: 30%;
+    
+}
+
+@media screen and ( min-width: 64em ) { /*large*/
+    
+
+    header .position {
+        left: 5%;
+    }
+
+    .grid-container {
+        max-width: 90%;
+    }
+}
