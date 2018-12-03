@@ -54,7 +54,7 @@ li.drop-down ul > li > a:hover, .frame h2, .exo-menu > li:nth-child(3) > .active
     color: #16292b;
 }
 
-h1 span, h2, h3, .button, .accordion-item.is-active .accordion-title, .button[type="submit"] {
+h1 span, h2, h3, .h3, .button, .accordion-item.is-active .accordion-title, .button[type="submit"] {
     color: #095369;
 }
 
@@ -66,15 +66,15 @@ h2, body > .callout p:first-child, .note p:first-child, #contact .rules h2 {
     font-size: 1.5rem;
 }
 
-nav li a, .button, h3, h4, form label, footer li a, .uppercase, .short-bio h2+p {
+nav li a, .button, h3, .h3, h4, form label, footer li a, .uppercase, .short-bio h2+p, .provider-page h1+p {
     text-transform: uppercase;
 }
 
-p a, nav li a, .button, h3, h4, .accordion-title, form label, #contact .rules h2, #contact .rules .cell:first-child {
+p a, nav li a, .button, h3, .h3, h4, .accordion-title, form label, #contact .rules h2, #contact .rules .cell:first-child {
     font-weight: 900;
 }
 
-h1, .short-bio h2+p {
+h1, .short-bio h2+p, .provider-page h1+p {
     color: #547787;
 }
 
@@ -83,6 +83,10 @@ h1, .short-bio h2+p {
 h1 {
     font-size: 2rem;
     margin-top: 12rem;
+}
+
+.provider-page h1 {
+    font-size: 2rem;
 }
 
 #index h1 {
@@ -94,7 +98,11 @@ h1 span {
     font-style: normal;
 }
 
-h3, h4 {
+.provider-page h1 span {
+    font-size: 1rem;
+}
+
+h3, .h3, h4 {
     font-size: 1rem;
 }
 
@@ -121,25 +129,33 @@ footer p a:hover, footer ul a:hover, .exo-menu > li > a.active {
     color: #c6a24a;
 }
 
-.short-bio h2 + p {
+.short-bio h2 + p, .provider-page h1+p {
     letter-spacing: 2px;
-    }
 }
 
 /*--- 1.3 - Buttons ---*/
 
-.button, .button[type="submit"] {
+.button, .button[type="submit"], .button-group .button {
     background-color: transparent;
     border: solid 1px #095369;
     border-radius: 0px;
     padding: 1rem;
     margin-top: 1rem;
 }
+
+.button-group .button:last-child {
+    margin-right: 2rem;
+}
+
 /*--- 1.4 - Forms ---*/
 /*--- 1.5 - Lists ---*/
 
 ul{
-	list-style:none;
+	list-style: url('../img/star.svg');
+}
+
+footer ul, nav ul, .accordion {
+    list-style: none;
 }
 
 /*--- 1.6 - Tables ---*/
@@ -280,16 +296,13 @@ body {
 }
 
 body > div, body > section {
-    padding-bottom: 5rem;
-}
-
-body > .callout + div {
-    padding-top: 3rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
 }
 
 body > .callout, body > footer {
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
 }
 
 .note .cell, #contact .rules {
@@ -301,13 +314,26 @@ footer .medium-text-right > p:nth-child(2) a, #contact p:nth-child(4) a {
     margin-left: 1rem;
 }
 
+body > .callout {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
 /*--- 3.1 - Site Structure (Site Header, Advertisement, Site Footer) ---*/
+
+body > footer {
+    margin-top: 5rem;
+}
+
+#contact > footer {
+    margin-top: 0;
+}
 
 footer li {
     list-style-type: none;
 }
 
-.callout, body > header .callout p, .exo-menu {
+#index, .callout, body > header .callout p, .exo-menu {
     margin-bottom: 0;
 }
 
@@ -320,7 +346,7 @@ footer i {
 }
 /*--- 3.2 - Home ---*/
 
-body > header + section, body > header + div {
+#index + section, #index + div {
     padding-top: 0;
 }
 
@@ -328,6 +354,10 @@ body > header + section, body > header + div {
     height: 1rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
+}
+
+body > .callout + footer {
+    margin-top: 5rem;
 }
 
 /*--- 3.3 - Services ---*/
@@ -345,6 +375,14 @@ body > header + section, body > header + div {
     height: calc(100% - 4rem);
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+.provider-page > header p {
+    line-height: 1.5rem;
+}
+
+.provider-page > header+div section:nth-child(2), .provider-page > header+div section:nth-child(3) {
+    padding-top: 3.5rem;
 }
 
 /*--- 3.5 - FAQ ---*/
@@ -389,8 +427,8 @@ body > header + section, body > header + div {
 
 #contact > div:nth-child(3) {
     background-color: #f7f4ed;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 #contact footer iframe {
@@ -449,6 +487,10 @@ footer iframe {
     background: no-repeat bottom right url(../img/cherry-blossom-flowers.jpg);
 }
 
+.provider-page > header {
+    background: no-repeat bottom right url(../img/clouds-in-sky.jpg);
+}
+
 /*--- 4.1 - Orbit ---*/
 
 .orbit-slide:first-child {
@@ -463,7 +505,7 @@ footer iframe {
     background: no-repeat bottom url(../img/cherry-blossom-flowers.jpg); 
 }
 
-.orbit-slide:first-child, .orbit-slide:nth-child(2), .orbit-slide:nth-child(3), body > header {
+.orbit-slide:first-child, .orbit-slide:nth-child(2), .orbit-slide:nth-child(3), body > header, .provider-page > header {
     -moz-background-size: cover;
 	-o-background-size: cover;
 	-webkit-background-size: cover;
@@ -471,7 +513,7 @@ footer iframe {
 	background-size: cover;
 }
 
-.orbit-slide, body > header {
+.orbit-slide {
     width: 100%;
     min-height: 26rem;
 }
@@ -489,6 +531,10 @@ footer iframe {
     width: auto;
     z-index: 0;
     padding-right: 1rem;
+}
+
+.provider-page > section:nth-child(3) img {
+    border: 1px solid #c6a24a;
 }
 
 /*--------------------------------------------------------------
@@ -565,13 +611,8 @@ body > .callout .cell {
     border: none;
 }
 
-.note {
-    padding-top: 0;
-}
-
 .accordion-title, .accordion-title:hover {
     font-size: 1rem;
-    line-height: 1;
     color: #547787;
 }
 
@@ -629,14 +670,22 @@ body > .callout .cell {
     }
 
     body > header {
+        padding-bottom: 4rem;
+    }
+
+
+    #index {
         padding-bottom: 6rem;
     }
-    
+
+    #contact > div:nth-child(3) {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
 
 }
 
 @media screen and ( min-width: 40em ) { /*medium */
-    
     
 
     /* Typography */
@@ -653,13 +702,20 @@ body > .callout .cell {
     h1 {
         font-size: 3rem;
     }
-    
+
     h1 span {
         font-size: 4rem;
-        font-style: normal;
+    }
+
+    .provider-page h1 {
+        font-size: 2.25rem;
+    }
+
+    .provider-page h1 span {
+        font-size: 1.25rem;
     }
     
-    h3 {
+    h3, .h3 {
         font-size: 1.25rem;
     }
     
@@ -678,11 +734,8 @@ body > .callout .cell {
     }
 
     body > div, body > section {
-        padding-bottom: 8rem;
-    }
-
-    body > .callout + div {
-        padding-top: 6rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
     }
 
     #contact .rules {
@@ -714,23 +767,12 @@ body > .callout .cell {
 
     /* Media */
 
-    body > header {
-        width: 100%;
-        min-height: 34rem;
-    }
-
     .orbit-slide {
         width: 100%;
         min-height: 36rem;
     }
-
-    /* Utility */
    
-
-    
 }
-
-    
 
 @media screen and ( min-width: 64em ) { /*large*/
 
@@ -743,24 +785,23 @@ body > .callout .cell {
     h1 {
         font-size: 3.75rem;
     }
+
+    .provider-page h1 {
+        font-size: 2.75rem;
+    }
     
     h1 span {
         font-size: 6rem;
-        font-style: normal;
     }
 
     #index h1 {
-        margin-top: 5rem;
+        margin-top: 7rem;
     }
     
     /* Alignment */
     
     .grid-container {
         max-width: 90%;
-    }
-
-    #index {
-        padding-bottom: 0;
     }
 
     .cell-group > div.cell {
@@ -780,11 +821,8 @@ body > .callout .cell {
     }
 
     body > div, body > section {
-        padding-bottom: 10rem;
-    }
-
-    body > .callout + div {
-        padding-top: 8rem;
+        padding-top: 4.5rem;
+        padding-bottom: 4.5rem;
     }
 
     #contact > div:nth-child(2) {
@@ -795,6 +833,10 @@ body > .callout .cell {
         height: calc(100% - 7rem);
         margin-top: 3.5rem;
         margin-bottom: 3.5rem;
+    }
+
+    .provider-page > header+div section:nth-child(2) {
+        padding-left: 2rem;
     }
 
     /* Media */
@@ -813,11 +855,10 @@ body > .callout .cell {
     
     .orbit-slide, body > header {
         width: 100%;
-        min-height: 40rem;
     }
 
     .orbit-slide, #index {
-        min-height: 46rem;
+        min-height: 41rem;
     }
     
 }
