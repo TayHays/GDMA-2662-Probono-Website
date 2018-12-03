@@ -4,11 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--add meta name description-->
+  <meta name="keywords" content="depression anxiety therap counselor psychologist cognitive behavioral therapy mental health cbt family couples">
+  <meta name="description" content="Catalyst Behavioral Health is a mental health clinic offering concussion evals and therapy sessions with Psychologist, therapists, and counselors.">
   <title>Catalyst Behavioral Health</title>
   <link rel="stylesheet" href="css/foundation.css">
-  <!-- For Orbit Animations-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
@@ -16,12 +15,11 @@
 
 <body>
   <!-- Header with Orbit-->
-
-  <header>
-    
-      <div class="callout text-center" data-closable="slide-out-up">
+  <header id="index">
+    <div class="top">
+      <div class="callout text-center" data-closable="fade-out">
         <div class="grid-container">
-          <p>After-hours Crisis Line <span><a href="tel:+18002474941">1.800.247.4941</a></span></p>
+          <p>After-hours Crisis Line <a href="tel:+18002474941">1.800.247.4941</a></p>
         </div>
         <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
           <span aria-hidden="true">&times;</span>
@@ -30,11 +28,11 @@
       <div class="navbar">
         <nav class="grid-container">
           <div class="title-bar align-justify" data-responsive-toggle="navigation" data-hide-for="medium">
-            <div class="title-bar-title"><a href="#"><img src="img/catalyst-logo.png" alt="Catalyst Behavioral Health"></a></div>
+            <div class="title-bar-title"><a href="#"><img src="img/catalyst-logo-white.svg" alt="Catalyst Behavioral Health"></a></div>
             <button class="menu-icon toggle-menu visible-xs-block" type="button" data-toggle="navigation"></button>
           </div>
           <div class="top-bar" id="navigation" data-animate="fade-in hinge-out-from-top">
-            <div class="top-bar-left hide-for-small-only"><a href="#"><img src="img/catalyst-logo.png" alt="Catalyst Behavioral Health"></a></div>
+            <div class="top-bar-left hide-for-small-only"><a href="#"><img src="img/catalyst-logo-white.svg" alt="Catalyst Behavioral Health"></a></div>
             <div class="top-bar">
               <ul class="exo-menu">
                 <li><a class="active" href="#">Home</a></li>
@@ -56,44 +54,87 @@
           </div>
         </nav>
       </div>
-      <div class="orbit" role="region" aria-label="Rotating Nature Pictures" data-timer-delay="3000" data-orbit
-      data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
-      <div class="orbit-wrapper">
-        <ul class="orbit-container">
-          <li class="is-active orbit-slide"></li>
-          <li class="orbit-slide"></li>
-          <li class="orbit-slide"></li>
-        </ul>
-      </div>
     </div>
-      <div class="grid-container position">
-        <div class="grid-x">
-            <div class="cell medium-8">
+    <div class="position-relative">
+      <div class="orbit" role="region" aria-label="Rotating Nature Pictures" data-timer-delay="3000" data-orbit
+        data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+        <div class="orbit-wrapper">
+          <ul class="orbit-container">
+            <li class="is-active orbit-slide"></li>
+            <li class="orbit-slide"></li>
+            <li class="orbit-slide"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="grid-container">
+        <div class="grid-x position-absolute">
+          <div class="cell medium-8 large-6">
             <h1><span>Catalyst</span><br>Behavioral Health</h1>
-        
-          
             <p>Maintaining a stable, well-balanced life is important for all of us but is often difficult to
-              accomplish.
-              Here at
-              Catalyst, our providers aim to be the spark that makes a difference in your life getting you on a
-              positive
-              path of
-              growth.</p>
+              accomplish. Here at Catalyst, our providers aim to be the spark that makes a difference in your life,
+              getting you on a positive path of growth.</p>
             <p class="uppercase">Call for an appointment <a href="tel:+14022618313">402.261.8313</a></p>
           </div>
         </div>
       </div>
-    
-
+    </div>
   </header>
 
   <!-- Body -->
-
+  <section class="grid-container">
+    <div class="grid-x grid-margin-y">
+      <div class="cell medium-7 large-5 margin-bottom-small">
+        <header>
+          <h2>How We Can Help You</h2>
+        </header>
+        <p>Catalyst has individual providers who offer unique services to fit almost any need. These services
+          include:</p>
+      </div>
+    </div>
+    <div class="grid-x grid-margin-x grid-margin-y cell-group" data-equalizer data-equalize-on="medium">
+      <div class="outline cell medium-4 large-3">
+        <section class="card" data-equalizer-watch>
+          <header>
+            <h3>Eye Movement Desensitization & Reprocessing</h3>
+          </header>
+          <p>We offer Eye Movement Desensitization and Reprocessing, or EMDR for trauma and PTSD. EMDR is a structured therapy
+            which helps clients reduce the vividness and emotions associated with traumatic memories.
+          </p>
+        </section>
+      </div>
+      <div class="outline cell medium-4 large-3">
+        <section class="card" data-equalizer-watch>
+          <header>
+            <h3>Cognitive Behavioral Therapy</h3>
+          </header>
+          <p>Cognitive Behavioral Therapy is a form of psychotherapy that treats problems by modifying dysfunctional
+            emotions, behaviors, and thoughts.
+            CBT aims to identify harmful thoughts, assess whether they reflect reality, and employs strategies to
+            overcome them.</p>
+        </section>
+      </div>
+      <div class="outline cell medium-4 large-3">
+        <section class="card" data-equalizer-watch>
+          <header>
+            <h3>NeuroPsych and Concussion Testing</h3>
+          </header>
+          <p>Neuropsychological testing is an important component of the assessment and treatment of traumatic brain
+            injury, dementia,
+            neurological conditions, and psychiatric disorders. We also offer concussion testing.</p>
+        </section>
+      </div>
+      <div class="cell medium-12 large-3 text-center">
+        <img src="img/star.svg" alt=""><img src="img/star.svg" alt=""><img src="img/star.svg" alt="">
+        <p>Explore our other services</p>
+        <p><a class="button" href="services/services.html">View Services</a></p>
+      </div>
+    </div>
+  </section>
   <section class="grid-container">
     <div class="grid-x grid-margin-x grid-margin-y">
-      <div class="cell large-3"><img class="frame" src="https://via.placeholder.com/350" alt="placeholder"></div>
+      <div class="cell medium-4 large-3"><img class="frame" src="https://via.placeholder.com/350" alt="placeholder"></div>
       <!--insert group pic here-->
-      <div class="cell large-6">
+      <div class="cell medium-8 large-6">
         <header>
           <h2>Creating Positive Change</h2>
         </header>
@@ -107,86 +148,35 @@
   </section>
   <div class="callout">
     <div class="grid-container text-center">
-      <p>Did you know &hellip; ?</p>
-      <p>We offer <b>Baseline Concussion Testing</b> for your student athlete.</p>
-      <p>Read more about concussion testing and treatment in Our Services.</p>
-      <p><a class="button" href="services/services.html">Our Services</a></p>
-    </div>
-  </div>
-  <div>
-    <section class="grid-container">
       <div class="grid-x">
-        <div class="cell medium-6 margin-bottom-small">
-      <header>
-        <h2>How We Can Help You</h2>
-      </header>
-      <p>Catalyst has individual providers who offer unique services to fit almost any need. These services include:</p>
-    </div>
-    </div>
-      <div class="grid-x grid-margin-x grid-margin-y cell-group" data-equalizer data-equalize-on="medium">
-        <div class="outline cell medium-4 large-3">
-        <section class="card" data-equalizer-watch>
-          <header>
-            <h3>EMDR for Trauma & PTSD</h3>
-          </header>
-          <p>We offer EMDR for trauma and PTSD. Eye Movement Desensitization and Reprocessing is a structured therapy
-            which helps clients
-            reduce the vividness and emotions associated with traumatic memories.
-          </p>
-        </section>
-        </div>
-        
-       
-        <div class="outline cell medium-4 large-3">
-          <section class="card" data-equalizer-watch> 
-          <header>
-            <h3>Cognitive Behavioral Therapy</h3>
-          </header>
-          <p>Cognitive Behavioral Therapy is a form of psychotherapy that treats problems by modifying dysfunctional
-            emotions, behaviors, and thoughts.
-            CBT aims to identify harmful thoughts, assess whether they reflect reality, and employs strategies to
-            overcome them.</p>
-        </section>
-        </div>
-        <div class="outline cell medium-4 large-3">
-        <section class="card" data-equalizer-watch>
-          <header>
-            <h3>NeuroPsych & Concussion Testing</h3>
-          </header>
-          <p>Neuropsychological testing is an important component of the assessment and treatment of traumatic brain
-            injury, dementia,
-            neurological conditions, and psychiatric disorders. We also offer concussion testing.</p>
-        </section>
-      </div>
-        <div class="cell medium-12 large-3 text-center">
-          <img src="https://via.placeholder.com/50" alt="">
-          <p>Explore our other services</p>
-          <p><a class="button" href="services/services.html">View Services</a></p>
+        <div class="cell small-10 small-offset-1 large-8 large-offset-2">
+          <p>Did you know &hellip; ?</p>
+          <p>We offer <b><i>Baseline Concussion Testing</i></b> for your student athlete. Read more about concussion testing and treatment in Our Services.</p>
+          <p><a class="button" href="services/services.html">Our Services</a></p>
         </div>
       </div>
-    </section>
+    </div>
   </div>
 
   <!-- Page Footer -->
   <footer>
-    <!--add background color-->
     <div class="grid-container">
       <div class="grid-x grid-margin-x">
         <div class="cell large-order-2 large-7">
           <div class="grid-x grid-margin-x align-justify">
             <div class="cell medium-6 medium-order-2 medium-text-right">
-              <p>Call for an appointment <span><a href="tel:+14022618313">402.261.8313</a></span></p>
-              <p>After Hours Crisis Line <span><a href="tel:+18002474941">1.800.247.4941</a></span></p>
-              <p>Find us on Facebook <a href="https://www.facebook.com/catalystbehavioralhealth/" target="_blank">
+              <p>Call for an appointment <a href="tel:+14022618313">402.261.8313</a><br>
+                After Hours Crisis Line <a href="tel:+18002474941">1.800.247.4941</a></p>
+              <p><i>Find us on Facebook</i><a href="https://www.facebook.com/catalystbehavioralhealth/" target="_blank">
                   <i class="fab fa-facebook-f" data-fa-transform="shrink-5" data-fa-mask="fas fa-circle"></i></a></p>
               <div class="cell large-4 show-for-large">
-                <nav class="footer-nav">
+                <nav>
                   <h4>Quick Links</h4>
                   <ul>
                     <li><a href="services/services.html">Services</a></li>
                     <li><a href="providers/providers.html">Our Providers</a></li>
                     <li><a href="contact/contact.html">Contact</a></li>
-                    <li><a href="fac/faq.html">FAQ</a></li>
+                    <li><a href="faq/faq.html">FAQ</a></li>
                     <li><a href="mailto:assistant@catalystbehavioralhealth.com">Careers</a></li>
                   </ul>
                 </nav>
@@ -195,8 +185,8 @@
             <div class="cell medium-6 medium-order-1">
               <section>
                 <h4>Catalyst Behavioral Health</h4>
-                <p>5539 S 27th Street, Suite 104<br>Lincoln, Nebraska 68512</p>
-                <p><a href="mailto:assistant@catalystbehavioralhealth.com">assistant@catalystbehavioralhealth.com</a></p>
+                <p>5539 S 27th Street, Suite 104<br>Lincoln, Nebraska 68512<br>
+                  <a href="mailto:assistant@catalystbehavioralhealth.com">assistant@catalystbehavioralhealth.com</a></p>
               </section>
               <section>
                 <h4>Directions</h4>
