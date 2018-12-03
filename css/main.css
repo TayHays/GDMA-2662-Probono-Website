@@ -279,7 +279,6 @@ nav li.drop-down > a:hover::after {
 /*--------------------------------------------------------------
 3.0 - Content
 -------------------------------------------------------------- */
-
 body {
     background-color: #fbfaf6;
 }
@@ -415,7 +414,6 @@ body > .callout + footer {
 .accordion {
     margin-top: 2rem;
 }
-
 /*--- 3.6 - Contact ---*/
 
 #contact .rules .cell {
@@ -547,7 +545,6 @@ footer iframe {
 /*--- 5.2 - Text Colors ---*/
 /*--- 5.3 - Text Sizes ---*/
 /*--- 5.4 - Alignments ---*/
-
 
 
 
