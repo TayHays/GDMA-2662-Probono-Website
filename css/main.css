@@ -1,0 +1,883 @@
+/* CSS Document */
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+1.0 - Typography
+	1.1 - Headings
+	1.2 - Body Copy
+	1.3 - Buttons
+	1.4 - Forms
+	1.5 - Lists
+	1.6 - Tables
+2.0 - Navigation Menus
+	2.1 - Main
+	2.2 - Sub
+	2.3 - Footer
+3.0 - Content
+	3.1 - Site Structure (Site Header, Advertisement, Site Footer)
+    3.2 - Section Name
+    3.3 - Section Name
+4.0 - Media
+    4.1 - Orbit
+5.0 - Utility
+	5.1 - Background Colors
+    5.2 - Text Colors
+    5.3 - Text Sizes
+    5.4 - Alignments
+6.0 - Media Queries
+
+--------------------------------------------------------------*/
+
+/*font-family: 'Noto Serif', serif;
+font-family: 'Noto Sans KR', sans-serif;*/
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*--------------------------------------------------------------
+1.0 - Typography
+-------------------------------------------------------------- */
+
+h1, h1 span, body > .callout p:first-child, h2, h4, .note p:first-child {
+    font-family: 'Noto Serif', serif;
+}
+
+h1, body > .callout p:first-child, .note p:first-child {
+    font-style: italic;
+}
+
+p, h4, p a, .close-button, .card h3, .exo-menu > li > a:hover,
+li.drop-down ul > li > a:hover, .exo-menu > li:nth-child(3) > .active:hover  {
+    color: #16292b;
+}
+
+h1 span, h2, h3, .h3, .button, .accordion-item.is-active .accordion-title, .button[type="submit"] {
+    color: #095369;
+}
+
+nav li a, footer p, footer a, h4, header .callout p a:hover, .close-button:hover, .button:hover {
+    color: #fff;
+}
+
+h2, body > .callout p:first-child, .note p:first-child {
+    font-size: 1.5rem;
+}
+
+nav li a, .button, h3, .h3, h4, form label, footer li a, .uppercase, .short-bio h2+p, .provider-page h1+p {
+    text-transform: uppercase;
+}
+
+p a, nav li a, .button, h3, .h3, h4, .accordion-title, form label, #contact .rules .cell:first-child {
+    font-weight: 900;
+}
+
+h1, .short-bio h2+p, .provider-page h1+p {
+    color: #547787;
+}
+
+/*--- 1.1 Headings ---*/
+
+h1 {
+    font-size: 2rem;
+    margin-top: 12rem;
+}
+
+.provider-page h1 {
+    font-size: 2rem;
+}
+
+#index h1 {
+    margin-top: 3rem;
+}
+
+h1 span {
+    font-size: 3rem;
+    font-style: normal;
+}
+
+.provider-page h1 span {
+    font-size: 1rem;
+}
+
+h3, .h3, h4 {
+    font-size: 1rem;
+}
+
+#contact .rules h3, #policies h2{
+    margin-bottom: 2rem;
+}
+
+/*--- 1.2 - Body Copy ---*/
+
+p > a:hover {
+    color:#547787;
+}
+
+nav li a, .button, form label, .button-group .button, .button[type="submit"] {
+    font-size: .7rem;
+    letter-spacing: 2px;
+}
+
+footer {
+    font-size: .85rem;
+}
+
+footer p a:hover, footer ul a:hover, .exo-menu > li > a.active {
+    color: #c6a24a;
+}
+
+.short-bio h2 + p, .provider-page h1+p {
+    letter-spacing: 2px;
+}
+
+/*--- 1.3 - Buttons ---*/
+
+.button, .button[type="submit"], .button-group .button {
+    background-color: transparent;
+    border: solid 1px #095369;
+    border-radius: 0px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.button-group .button:last-child {
+    margin-right: 2rem;
+}
+
+/*--- 1.4 - Forms ---*/
+/*--- 1.5 - Lists ---*/
+
+ul{
+	list-style: url('../img/star.svg');
+}
+
+footer ul, nav ul, .accordion {
+    list-style: none;
+}
+
+/*--- 1.6 - Tables ---*/
+
+
+/*--------------------------------------------------------------
+2.0 - Navigation Menus
+-------------------------------------------------------------- */
+
+/*--- 2.1 - Main ---*/
+
+.drop-down-ul, .exo-menu {
+    margin-left: 0;
+}
+
+.exo-menu{
+	width: 100%;
+	float: left;
+	list-style: none;
+    position:relative;
+}
+
+.exo-menu > li {	display: inline-block;float:left;}
+.exo-menu > li > a {
+	text-decoration: none;
+	-webkit-transition: color 0.2s linear, background 0.2s linear;
+	-moz-transition: color 0.2s linear, background 0.2s linear;
+	-o-transition: color 0.2s linear, background 0.2s linear;
+	transition: color 0.2s linear, background 0.2s linear;
+}
+
+.exo-menu > li > .active:hover {
+    background-color: transparent;    
+}
+
+.exo-menu i {
+  float: left;
+  margin-right: 6px;
+  line-height: 20px !important;
+}
+
+li.drop-down {
+    position:relative;
+    margin-right: 1rem;
+}
+
+li.drop-down:before {
+  color: #fff;
+  display: inline;
+  position: absolute;
+  right: 6px;
+  top: 20px;
+}
+
+li.drop-down>ul{
+	left: 0px;
+	min-width: 230px;
+}
+
+.drop-down-ul {
+    display:none;
+    z-index: 3;
+}
+
+li.drop-down>ul>li>a {
+	color:#16292b;
+	display: block;
+	padding: 20px 22px;
+	text-decoration: none;
+	background-color: #e7f1f2;
+	border-bottom: 1px solid #fff;
+	-webkit-transition: color 0.2s linear, background 0.2s linear;
+	-moz-transition: color 0.2s linear, background 0.2s linear;
+	-o-transition: color 0.2s linear, background 0.2s linear;
+	transition: color 0.2s linear, background 0.2s linear;
+}
+
+.drop-down-ul:hover, li.drop-down>a:hover +.drop-down-ul {
+	display:block;
+}
+
+.exo-menu > li > a  {
+	display:block;
+	padding: 20px 22px;
+ }
+
+li.drop-down>ul{
+		position:absolute;
+}
+
+.navbar {
+    z-index: 3;
+}
+
+nav li.drop-down > a::after {
+    content: '';
+    border: inset 6px; 
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-bottom-width: 0;
+    border-right-color: transparent;
+    border-top-color: #fff;
+    border-top-style: solid;
+    position: relative;
+    top: .7rem;
+    left: 0;
+    margin-left: 1rem;
+}
+
+nav li.drop-down > a.active::after {
+    border-top-color: #c6a24a;
+}
+
+nav li.drop-down > a:hover::after {
+    border-top-color: #16292b;;
+}
+
+/*--- 2.2 - Sub ---*/
+/*--- 2.3 - Footer ---*/
+
+/*--------------------------------------------------------------
+3.0 - Content
+-------------------------------------------------------------- */
+
+body {
+    background-color: #fbfaf6;
+}
+
+.card {
+    background-color: #e5d8a1;
+}
+
+.navbar, .top-bar, .top-bar ul, .title-bar, body > footer, .button:hover, #contact form input[type="submit"]:hover {
+    background-color: #2c5a68;
+}
+
+.exo-menu > li > a:hover, li.drop-down ul > li > a:hover, body > header .callout, .note .cell, .exo-menu > li:nth-child(3) > .active:hover {
+    background-color:#aabfc1;
+}
+
+body > div, body > section {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+body > .callout, body > footer {
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.note .cell, #contact .rules {
+    padding: 2rem;
+}
+
+footer .medium-text-right > p:nth-child(2) a, #contact p:nth-child(4) a {
+    font-size: 1.6rem;
+    margin-left: 1rem;
+}
+
+body > .callout {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/*--- 3.1 - Site Structure (Site Header, Advertisement, Site Footer) ---*/
+
+body > footer {
+    margin-top: 5rem;
+}
+
+#contact > footer {
+    margin-top: 0;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+#index, .callout, body > header .callout p, .exo-menu {
+    margin-bottom: 0;
+}
+
+footer div:last-child section:last-child h4, footer nav h4 {
+    margin-top: 1.75rem;
+}
+
+footer i {
+    display: inline;
+}
+/*--- 3.2 - Home ---*/
+
+#index + section, #index + div {
+    padding-top: 0;
+}
+
+.cell-group div:last-child img {
+    height: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+body > .callout + footer {
+    margin-top: 5rem;
+}
+
+/*--- 3.3 - Services ---*/
+
+.rules .cell {
+    margin-top: 2rem;
+    border-bottom: solid 1px #c6a24a;
+    padding: 0 1rem 2rem;
+}
+
+/*--- 3.4 - Providers ---*/
+
+.grid-margin-y > .cell.short-bio {
+    height: calc(100% - 4rem);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.provider-page > header p {
+    line-height: 1.5rem;
+}
+
+.provider-page > header+div section:nth-child(2), .provider-page > header+div section:nth-child(3) {
+    padding-top: 3.5rem;
+}
+
+/*--- 3.5 - FAQ ---*/
+
+.accordion-title::before {
+    content: '';
+    border: inset 6px; 
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-bottom-width: 0;
+    border-right-color: transparent;
+    border-top-color: #095369;
+    border-top-style: solid;
+    margin-top: -0.25rem;
+}
+
+.is-active > .accordion-title::before {
+    content: '';
+    border: inset 6px; 
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-bottom-width: 0;
+    border-right-color: transparent;
+    border-top-color: #095369;
+    border-top-style: solid;
+    margin-top: -0.25rem;
+}
+
+.accordion {
+    margin-top: 2rem;
+}
+
+/*--- 3.6 - Contact ---*/
+
+#contact .rules .cell {
+    margin-top: 0;
+    padding: 1rem 0 0;
+}
+
+#contact .rules, form {
+    margin-top: 3rem;
+}
+
+#contact > div:nth-child(3) {
+    background-color: #f7f4ed;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+#contact footer iframe {
+    height: 20rem;
+    margin: 1rem 0;
+}
+
+#contact form input, textarea {
+    border: 1px solid #095369;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+#contact form input:focus, textarea:focus {
+    background-color: #aabfc1;
+}
+
+form ::placeholder {
+    color: #aabfc1;
+}
+
+#contact footer h4 {
+    margin-top: 0;
+}
+
+#contact p:nth-child(4) a {
+    margin-left: 0;
+    margin-right: 1rem;
+}
+
+#contact .rules .cell {
+    border-bottom: solid 1px #aabfc1;
+}
+
+/*--------------------------------------------------------------
+4.0 - Media
+-------------------------------------------------------------- */
+
+.title-bar-title img, .top-bar-left img {
+    width: 8rem;
+}
+
+footer iframe {
+    height: 100%;
+    width: 100%;
+}
+
+#services {
+    background: no-repeat bottom right url(../img/blossoms-in-sunset.jpg);
+}
+
+#faq {
+    background: no-repeat bottom right url(../img/california-poppies.jpg);
+}
+
+#contact > header {
+    background: no-repeat bottom right url(../img/yellow-flowers-blue-sky.jpg);
+}
+
+#providers > header {
+    background: no-repeat bottom right url(../img/cherry-blossom-flowers.jpg);
+}
+
+.provider-page > header {
+    background: no-repeat bottom right url(../img/clouds-in-sky.jpg);
+}
+
+/*--- 4.1 - Orbit ---*/
+
+.orbit-slide:first-child {
+    background: no-repeat bottom url(../img/red-poppies-in-field.jpg);  
+}
+
+.orbit-slide:nth-child(2) {
+    background: no-repeat bottom url(../img/clouds-in-sky.jpg); 
+}
+
+.orbit-slide:nth-child(3) {
+    background: no-repeat bottom url(../img/cherry-blossom-flowers.jpg); 
+}
+
+.orbit-slide:first-child, .orbit-slide:nth-child(2), .orbit-slide:nth-child(3), body > header, .provider-page > header {
+    -moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	-ms-background-size: cover;
+	background-size: cover;
+}
+
+.orbit-slide {
+    width: 100%;
+    min-height: 26rem;
+}
+
+.position-relative {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.position-absolute {
+    position: absolute;
+    top: 5rem;
+    left: auto;
+    width: auto;
+    z-index: 0;
+    padding-right: 1rem;
+}
+
+.provider-page > section:nth-child(3) img {
+    border: 1px solid #c6a24a;
+}
+
+/*--------------------------------------------------------------
+5.0 - Utility
+-------------------------------------------------------------- */
+
+/*--- 5.1 - Background Colors ---*/
+/*--- 5.2 - Text Colors ---*/
+/*--- 5.3 - Text Sizes ---*/
+/*--- 5.4 - Alignments ---*/
+
+
+
+
+.title-bar-title, .top-bar-left.hide-for-small-only {
+    flex: 1;
+}
+
+.orbit {
+    z-index: -2;
+}
+
+.card {
+    padding: 1.5rem;
+}
+
+.frame {
+    outline: 1px solid #f8f5ed;
+    outline-offset: -.5rem;
+}
+
+#contact .frame {
+    outline: 1px solid #aabfc1;
+}
+
+.outline {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+ .outline::after {
+    content: '';
+    background: transparent;
+    border: 1px solid #c6a24a;
+    top: 30%;
+    right: -.5rem;
+    bottom: 0;
+    left: -.5rem;
+    position: absolute;
+    z-index: -1;
+  }
+
+body > .callout ::before {
+    content: '';
+    background-color: #e5d8a1;
+    top: 4rem;
+    bottom: 4rem;
+    right: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+body > .callout .cell {
+    border: 1px solid #c6a24a;
+    padding: 3rem 1rem;
+}
+
+.top {
+    z-index: 1;
+}
+
+.callout, .accordion {
+    background-color: transparent;
+}
+
+.callout {
+    border: none;
+}
+
+.accordion-title, .accordion-title:hover {
+    font-size: 1rem;
+    color: #547787;
+}
+
+.accordion-title:hover, .accordion-item.is-active .accordion-title {
+    background-color: #f7f4ed;
+}
+
+.accordion-title, .accordion-content {
+    border: none;
+}
+
+.accordion-content {
+    background-color: #e5d8a1;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #c6a24a;
+}
+
+.accordion-title, .accordion-title:hover {
+    padding-right: 2rem;
+    line-height: 1.5rem;
+}
+
+
+/*--------------------------------------------------------------
+6.0 - Media Queries
+-------------------------------------------------------------- */
+
+@media (max-width:40em){ /* small */
+
+	.exo-menu {
+		min-height: 58px;
+        width: 100%;
+        z-index: 1;
+	}
+	
+	.exo-menu > li > a{
+		width:100% ;
+	    display:none ;
+    }
+    
+	.exo-menu > li {
+		width:100%;
+    }
+    
+	.display.exo-menu > li > a{
+	    display:block ;
+	  	padding: 20px 22px;
+	}
+	
+    li.drop-down>ul, .top {
+        position:relative;
+        z-index: 1;
+    }
+
+    body > header {
+        padding-bottom: 4rem;
+    }
+
+
+    #index {
+        padding-bottom: 6rem;
+    }
+
+    #contact > div:nth-child(3) {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+}
+
+@media screen and ( min-width: 40em ) { /*medium */
+    
+
+    /* Typography */
+
+    h2, body > .callout p:first-child, .note p:first-child {
+        font-size: 1.8rem;
+    }
+
+    .short-bio h2 {
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h1 span {
+        font-size: 4rem;
+    }
+
+    .provider-page h1 {
+        font-size: 2.25rem;
+    }
+
+    .provider-page h1 span {
+        font-size: 1.25rem;
+    }
+    
+    h3, .h3 {
+        font-size: 1.25rem;
+    }
+    
+    h4 {
+        font-size: 1rem;
+    }
+
+    #index h1 {
+        margin-top: 3rem;
+    }
+
+    /* Alignment */
+
+    body > .callout .cell {
+        padding: 4rem;
+    }
+
+    body > div, body > section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    #contact .rules {
+        margin-top: 0;
+    }
+
+    #contact > div:nth-child(2) {
+        margin-top: 3rem;
+    }
+
+    form .input-group-button {
+            -webkit-box-pack: end;
+            -webkit-justify-content: flex-end;
+            -ms-flex-pack: end;
+            justify-content: flex-end;
+    }
+
+    .grid-margin-y > .cell.short-bio {
+        height: calc(100% - 5rem);
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    form > div > div:first-child {
+        padding-right: 2rem;
+    }
+
+    /* Navigation */
+
+    .drop-down-ul {
+        padding-top: 1rem;
+    }
+
+    /* Media */
+
+    .orbit-slide {
+        width: 100%;
+        min-height: 36rem;
+    }
+   
+}
+
+@media screen and ( min-width: 64em ) { /*large*/
+
+    /* Typography */
+
+    h2, body > .callout p:first-child, .note p:first-child {
+        font-size: 2.2rem;
+    }
+
+    h1 {
+        font-size: 3.75rem;
+    }
+
+    .provider-page h1 {
+        font-size: 2.75rem;
+    }
+    
+    h1 span {
+        font-size: 6rem;
+    }
+
+    #index h1 {
+        margin-top: 7rem;
+    }
+    
+    /* Alignment */
+    
+    .grid-container {
+        max-width: 90%;
+    }
+
+    .cell-group > div.cell {
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+        width: calc(25% - 3rem);
+    }
+
+    .cell-group div:last-child img {
+        height: 1rem;
+        margin-bottom: 2rem;
+        margin-top: 30%;
+    }
+
+    #policies .cell-group > div.cell {
+        width: calc(33% - 3rem);
+    }
+
+    body > div, body > section {
+        padding-top: 4.5rem;
+        padding-bottom: 4.5rem;
+    }
+
+    #contact > div:nth-child(2) {
+        margin-top: 0;
+    }
+
+    .grid-margin-y > .cell.short-bio {
+        height: calc(100% - 7rem);
+        margin-top: 3.5rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .provider-page > header+div section:nth-child(2) {
+        padding-left: 2rem;
+    }
+
+    form > div > div:first-child {
+        padding-right: 4rem;
+    }
+
+    /* Media */
+
+    .orbit-slide:first-child {
+        background: no-repeat bottom right url(../img/red-poppies-in-field.jpg);   
+    }
+    
+    .orbit-slide:nth-child(2) {
+        background: no-repeat bottom right url(../img/clouds-in-sky.jpg); 
+    }
+    
+    .orbit-slide:nth-child(3) {
+        background: no-repeat bottom right url(../img/cherry-blossom-flowers.jpg); 
+    }
+    
+    .orbit-slide, body > header {
+        width: 100%;
+    }
+
+    .orbit-slide, #index {
+        min-height: 41rem;
+    }
+    
+}
