@@ -549,6 +549,10 @@ footer iframe {
     background: no-repeat bottom right url(../img/clouds-in-sky.jpg);
 }
 
+.social-media svg {
+    transform: translatey(.2rem);
+}
+
 /*--- 4.1 - Orbit ---*/
 
 .orbit-slide:first-child {
