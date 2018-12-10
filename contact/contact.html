@@ -47,10 +47,10 @@
     </div>
     <div class="grid-container">
       <h1>Contact</h1>
-      <div class="grid-x">
+      <div class="grid-x grid-margin-x">
         <div class="cell cell medium-8 large-5">
           <p>Feel free to contact us with any questions.</p>
-          <p><i>Please Note &hellip;</i> Our office manager is not always in the office. If you have an appointment,
+          <p><i>Please Note...</i>Our office manager is not always in the office. If you have an appointment,
             please wait in the waiting room and your provider will be with you shortly.</p>
         </div>
       </div>
@@ -69,9 +69,8 @@
           <p>Phone | <a href="tel:14022618313">402.261.8313</a><br>
             Crisis Line | <a href="tel:+18002474941">1.800.247.4941</a><br>
             Fax | 402.261.8313</p>
-          <p><a class="social-media" href="https://www.facebook.com/catalystbehavioralhealth/" target="_blank">
-              <i class="fab fa-facebook-f" data-fa-transform="shrink-5" data-fa-mask="fas fa-circle"></i></a><i>Find us
-              on Facebook</i></p>
+          <p><i>Find us on Facebook</i><a class="social-media" href="https://www.facebook.com/catalystbehavioralhealth/" target="_blank">
+              <i class="fab fa-facebook-f" data-fa-transform="shrink-5" data-fa-mask="fas fa-circle"></i></a></p>
         </section>
       </div>
       <section class="cell medium-6 large-auto rules frame">
@@ -80,10 +79,10 @@
         </header>
         <div class="grid-x align-justify">
           <div class="cell small-6 medium-4">
-            <p>Mon-Thurs</p>
+            <p>Mon&ndash;Thurs</p>
           </div>
           <div class="cell small-6 medium-8 text-right">
-            <p>9am - 4pm</p>
+            <p>9am&ndash;4pm</p>
           </div>
         </div>
         <div class="grid-x align-justify">
@@ -91,7 +90,7 @@
             <p>Friday</p>
           </div>
           <div class="cell small-6 medium-8 text-right">
-            <p>9am - 12pm</p>
+            <p>9am&ndash;12pm</p>
           </div>
         </div>
         <div class="grid-x align-justify">
@@ -119,17 +118,17 @@
           <div class="medium-6 cell">
             <div class="medium-6 cell">
               <label>First Name
-                <input type="text" name="first-name" placeholder="First Name" maxlength="20">
+                <input type="text" name="first-name" placeholder="First Name" maxlength="20" required>
               </label>
             </div>
             <div class="medium-6 cell">
               <label>Last Name
-                <input type="text" name="last-name" placeholder="Last Name" maxlength="20">
+                <input type="text" name="last-name" placeholder="Last Name" maxlength="20" required>
               </label>
             </div>
             <div class="medium-6 cell">
               <label>Phone
-                <input type="tel" name="phone" placeholder="xxxxxxxxxx" maxlength="10">
+                <input type="tel" name="phone" placeholder="xxxxxxxxxx" maxlength="10" required>
               </label>
             </div>
             <div class="medium-6 cell">
@@ -141,7 +140,7 @@
           <div class="medium-6 cell">
             <label>
               Message
-              <textarea rows="5" name="message"></textarea>
+              <textarea rows="5" name="message" required></textarea>
             </label>
             <div class="input-group-button">
               <input type="submit" class="button" value="Submit"><!-- link?? -->
