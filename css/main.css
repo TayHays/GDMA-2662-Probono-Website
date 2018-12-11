@@ -435,7 +435,7 @@ body > .callout + footer {
 }
 
 .provider-page .navbar + div {
-    margin-top: 12rem;
+    margin-top: 6rem;
 }
 
 hr {
@@ -658,9 +658,9 @@ footer iframe {
     background: transparent;
     border: 1px solid #c6a24a;
     top: 30%;
-    right: -.5rem;
+    right: -1rem;
     bottom: 0;
-    left: -.5rem;
+    left: -1rem;
     position: absolute;
     z-index: -1;
   }
