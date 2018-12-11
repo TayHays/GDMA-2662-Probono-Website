@@ -38,15 +38,16 @@
 1.0 - Typography
 -------------------------------------------------------------- */
 
-h1, h1 span, body > .callout p:first-child, h2, h4 {
+h1, h1 span, body > .callout p:first-child, h2, h2 span, h4 {
     font-family: 'Noto Serif', serif;
 }
+
 
 h3, .h3 {
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-h1, body > .callout p:first-child, body > .callout h2 {
+h1, #providers h2, body > .callout p:first-child, body > .callout h2 {
     font-style: italic;
 }
 
@@ -96,6 +97,7 @@ h1, .short-bio h2+p, .provider-page h1+p {
 h1 {
     font-size: 2rem;
     margin-top: 12rem;
+    line-height: 1.2;
 }
 
 .provider-page h1 {
@@ -109,10 +111,17 @@ h1 {
 
 h1 span {
     font-size: 3rem;
+}
+
+h1 span, h2 span {
     font-style: normal;
 }
 
-.provider-page h1 span {
+h2 span {
+    font-weight: 400;
+}
+
+.provider-page h1 span, h4 {
     font-size: 1rem;
 }
 
@@ -120,9 +129,6 @@ h3, .h3 {
     font-size: 1rem;
 }
 
-h4 {
-    font-size: 1rem;
-}
 
 #policies h2{
     margin-bottom: 2rem;
@@ -184,7 +190,7 @@ footer .medium-order-2 p:first-child {
 /*--- 1.5 - Lists ---*/
 
 ul{
-	list-style: url('../img/star.svg');
+	list-style-image: url('../img/star.svg');
 }
 
 footer ul, nav ul, .accordion, #providers .no-bullet {
@@ -279,7 +285,7 @@ li.drop-down>ul>li>a {
  }
 
 li.drop-down>ul{
-		position:absolute;
+	position:absolute;
 }
 
 .navbar {
@@ -565,10 +571,6 @@ footer iframe {
 
 .provider-page > header {
     background: no-repeat bottom right url(../img/clouds-in-sky.jpg);
-}
-
-.social-media svg {
-    transform: translatey(.2rem);
 }
 
 /*--- 4.1 - Orbit ---*/
