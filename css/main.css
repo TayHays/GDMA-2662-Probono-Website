@@ -8,13 +8,9 @@
 	1.1 - Headings
 	1.2 - Body Copy
 	1.3 - Buttons
-	1.4 - Forms
-	1.5 - Lists
-	1.6 - Tables
+	1.4 - Lists
 2.0 - Navigation Menus
 	2.1 - Main
-	2.2 - Sub
-	2.3 - Footer
 3.0 - Content
 	3.1 - Site Structure (Site Header, Advertisement, Site Footer)
     3.2 - Home
@@ -26,9 +22,7 @@
     4.1 - Orbit
 5.0 - Utility
 	5.1 - Background Colors
-    5.2 - Text Colors
-    5.3 - Text Sizes
-    5.4 - Alignments
+    5.2 - Alignments
 6.0 - Media Queries
 
 --------------------------------------------------------------*/
@@ -82,16 +76,20 @@ p a, .cell-group li a, nav li a, h3, .h3, h4, .accordion-title, form label, #con
     font-weight: 700;
 }
 
-h1, .short-bio h2+p, .provider-page h1+p, p > a:hover {
+h1, .short-bio h2+p, .provider-page h1+p, p a:hover {
     color: #547787;
 }
 
-.provider-page > .callout li {
+p, footer .medium-order-2 p:first-child {
     line-height: 2rem;
 }
 
-.provider-page > .callout a {
-    text-decoration: underline;
+h1, .social-media {
+    font-size: 2rem;
+}
+
+.social-media {
+    white-space: nowrap;
 }
 
 h1, .social-media {
@@ -107,7 +105,6 @@ h1 {
 
 .provider-page h1 {
     font-size: 1.75rem;
-    margin-top: 0;
 }
 
 h1 span {
@@ -126,13 +123,7 @@ h2 span {
     font-size: 1rem;
 }
 
-
-
 /*--- 1.2 - Body Copy ---*/
-
-p {
-    line-height: 2rem;
-}
 
 footer p, body > div ul, body > section ul {
     line-height: 1.8rem;
@@ -147,7 +138,6 @@ footer, footer .social-media span, .short-bio h2 + p, .provider-page h1+p {
     font-size: .85rem;
 }
 
-
 footer p a:hover, footer ul a:hover, .exo-menu > li > a.active {
     color: #c6a24a;
 }
@@ -156,11 +146,6 @@ footer p a:hover, footer ul a:hover, .exo-menu > li > a.active {
     letter-spacing: 1px;
 }
 
-footer .medium-order-2 p:first-child {
-    line-height: 2rem;
-}
-
-
 footer .social-media {
     font-size: 1.6rem;
 }
@@ -168,7 +153,6 @@ footer .social-media {
 /*--- 1.3 - Buttons ---*/
 
 .button, .button[type="submit"] {
-    background-color: transparent;
     border: solid 1px #095369;
     margin-top: 1rem;
     padding: 1rem;
@@ -183,8 +167,7 @@ footer .social-media {
     padding-left: 2.5rem;
 }
 
-/*--- 1.4 - Forms ---*/
-/*--- 1.5 - Lists ---*/
+/*--- 1.4 - Lists ---*/
 
 ul {
     display: list-item;
@@ -194,9 +177,6 @@ ul {
 footer ul, nav ul, .accordion, #providers .no-bullet, .exo-menu {
     list-style: none;
 }
-
-/*--- 1.6 - Tables ---*/
-
 
 /*--------------------------------------------------------------
 2.0 - Navigation Menus
@@ -209,7 +189,6 @@ footer ul, nav ul, .accordion, #providers .no-bullet, .exo-menu {
 }
 
 .exo-menu{
-	width: 100%;
 	float: left;
     position:relative;
 }
@@ -224,10 +203,6 @@ footer ul, nav ul, .accordion, #providers .no-bullet, .exo-menu {
 	-moz-transition: color 0.2s linear, background 0.2s linear;
 	-o-transition: color 0.2s linear, background 0.2s linear;
 	transition: color 0.2s linear, background 0.2s linear;
-}
-
-.exo-menu > li > .active:hover {
-    background-color: transparent;    
 }
 
 .exo-menu i {
@@ -260,19 +235,16 @@ li.drop-down>ul{
 
 li.drop-down>ul>li>a {
 	color:#16292b;
-	display: block;
 	padding: 20px 22px;
-	background-color: #e7f1f2;
 	border-bottom: 1px solid #fff;
 }
 
-.drop-down-ul:hover, li.drop-down>a:hover +.drop-down-ul {
-	display: block;
-}
-
 .exo-menu > li > a  {
-	display: block;
 	padding: 20px 22px;
+ }
+
+ li.drop-down>ul>li>a, .drop-down-ul:hover, li.drop-down>a:hover +.drop-down-ul, .exo-menu > li > a {
+     display: block;
  }
 
 li.drop-down>ul{
@@ -306,9 +278,6 @@ nav li.drop-down > a:hover::after {
     border-top-color: #16292b;;
 }
 
-/*--- 2.2 - Sub ---*/
-/*--- 2.3 - Footer ---*/
-
 /*--------------------------------------------------------------
 3.0 - Content
 -------------------------------------------------------------- */
@@ -320,8 +289,8 @@ body {
     background-color: #2c5a68;
 }
 
-.exo-menu > li > a:hover, li.drop-down ul > li > a:hover, body > header .callout, .exo-menu > li:nth-child(3) > .active:hover {
-    background-color:#aabfc1;
+.exo-menu > li > a:hover, li.drop-down ul > li > a:hover, body > header .callout, .exo-menu > li:nth-child(3) > .active:hover, .accordion-title:hover, .accordion-item.is-active .accordion-title, #contact form input:focus, textarea:focus {
+    background-color: #aabfc1;
 }
 
 body > div, body > section, body > .callout {
@@ -346,14 +315,34 @@ body > footer {
     border-radius: 0;
 }
 
+.exo-menu, footer iframe, .orbit-slide {
+    width: 100%;
+}
+
+.outline::after, body > .callout .cell {
+    border: 1px solid #c6a24a;
+}
+
+.provider-page h1, #contact > footer, .provider-page > footer, #contact .rules .cell {
+    margin-top: 0;
+}
+
+.button, .button[type="submit"], #contact form input, textarea, .callout, .accordion, .exo-menu > li > .active:hover {
+    background-color: transparent;
+}
+
+.card, body > .callout ::before {
+    background-color: #e5d8a1;
+}
+
+li.drop-down>ul>li>a, .accordion-content {
+    background-color: #e7f1f2;
+}
+
 /*--- 3.1 - Site Structure (Site Header, Advertisement, Site Footer) ---*/
 
 body > footer {
     margin-top: 5rem;
-}
-
-#contact > footer {
-    margin-top: 0;
 }
 
 footer li {
@@ -388,6 +377,14 @@ footer i {
     margin-bottom: 0;
 }
 
+body > header {
+    padding-bottom: 4rem;
+}
+
+#index {
+    padding-bottom: 6rem;
+}
+
 /*--- 3.2 - Home ---*/
 
 #index + section, #index + div {
@@ -404,6 +401,13 @@ body > .callout + footer {
     margin-top: 2rem;
     border-bottom: solid 1px #c6a24a;
     padding: 0 1rem 2rem;
+}
+
+#services + section .frame {
+    border-bottom: none;
+    outline: 1px solid #c6a24a;
+    outline-offset: 0;
+    padding: 2rem;
 }
 
 /*--- 3.4 - Providers ---*/
@@ -429,7 +433,7 @@ hr {
     width: 50%;
     margin-left: 0;
     margin-top: 1.5rem;
-    border-top: solid 1px #c6a24a;
+    border-bottom: solid 1px #c6a24a;
 }
 
 .provider-page hr {
@@ -440,25 +444,13 @@ hr {
     margin-bottom: 1rem;
 }
 
-.provider-page > footer {
-    margin-top: 0;
+.provider-page > header .medium-8, #providers h2 {
+    margin-top: 2rem;
 }
 
 /*--- 3.5 - FAQ ---*/
 
-.accordion-title::before {
-    content: '';
-    border: inset 6px; 
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-    border-bottom-width: 0;
-    border-right-color: transparent;
-    border-top-color: #095369;
-    border-top-style: solid;
-    margin-top: -0.25rem;
-}
-
-.is-active > .accordion-title::before {
+.accordion-title::before, .is-active > .accordion-title::before {
     content: '';
     border: inset 6px; 
     border-bottom-color: transparent;
@@ -473,10 +465,10 @@ hr {
 .accordion {
     margin-top: 2rem;
 }
+
 /*--- 3.6 - Contact ---*/
 
 #contact .rules .cell {
-    margin-top: 0;
     padding: 1rem 0 0;
 }
 
@@ -485,26 +477,17 @@ hr {
 }
 
 #contact > div:nth-child(3) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     background-color: #f7f4ed;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
 }
 
 #contact form input, textarea {
     border: 1px solid #095369;
-    background-color: transparent;
-}
-
-#contact form input:focus, textarea:focus {
-    background-color: #aabfc1;
 }
 
 form ::placeholder {
     color: #aabfc1;
-}
-
-#contact footer h4 {
-    margin-top: 0;
 }
 
 #contact p:nth-child(4) a {
@@ -531,7 +514,6 @@ form ::placeholder {
 
 footer iframe {
     height: 100%;
-    width: 100%;
 }
 
 #services {
@@ -569,7 +551,6 @@ footer iframe {
 }
 
 .orbit-slide {
-    width: 100%;
     min-height: 26rem;
 }
 
@@ -594,7 +575,6 @@ footer iframe {
 
 .card {
     padding: 1.5rem;
-    background-color: #e5d8a1;
     margin-bottom: .5rem;
 }
 
@@ -609,11 +589,7 @@ footer iframe {
     background-color: #fff;
 }
 
-/*--- 5.2 - Text Colors ---*/
-/*--- 5.3 - Text Sizes ---*/
-/*--- 5.4 - Alignments ---*/
-
-
+/*--- 5.2 - Alignments ---*/
 
 .title-bar-title, .top-bar-left.hide-for-small-only {
     flex: 1;
@@ -636,7 +612,6 @@ footer iframe {
 .outline::after {
     content: '';
     background: transparent;
-    border: 1px solid #c6a24a;
     top: 30%;
     right: -.5rem;
     bottom: 0;
@@ -647,7 +622,6 @@ footer iframe {
 
 body > .callout ::before {
     content: '';
-    background-color: #e5d8a1;
     top: 4rem;
     bottom: 4rem;
     right: 0;
@@ -657,12 +631,7 @@ body > .callout ::before {
 }
 
 body > .callout .cell {
-    border: 1px solid #c6a24a;
     padding: 3rem 1rem;
-}
-
-.callout, .accordion {
-    background-color: transparent;
 }
 
 .accordion-title, .accordion-title:hover {
@@ -670,20 +639,12 @@ body > .callout .cell {
     color: #547787;
 }
 
-.accordion-title:hover, .accordion-item.is-active .accordion-title {
-    background-color: #f7f4ed;
-}
-
 .accordion-title, .accordion-content, .callout, .card {
     border: none;
 }
 
-.accordion-content {
-    background-color: #e5d8a1;
-}
-
 .accordion-item {
-    border-bottom: 1px solid #c6a24a;
+    border-bottom: 1px solid #095369;
 }
 
 .accordion-title, .accordion-title:hover, .accordion-content {
@@ -703,20 +664,18 @@ body > .callout .cell {
 
 	.exo-menu {
 		min-height: 58px;
-        width: 100%;
         z-index: 1;
 	}
 	
-	.exo-menu > li > a{
-		width: 100%;
+	.exo-menu > li > a {
 	    display:none ;
     }
     
-	.exo-menu > li {
+	.exo-menu > li, .exo-menu > li > a {
 		width: 100%;
     }
     
-	.display.exo-menu > li > a{
+	.display.exo-menu > li > a {
 	    display: block;
 	  	padding: 20px 22px;
 	}
@@ -724,24 +683,6 @@ body > .callout .cell {
     li.drop-down>ul, .top {
         position: relative;
         z-index: 1;
-    }
-
-    body > header {
-        padding-bottom: 4rem;
-    }
-
-
-    #index {
-        padding-bottom: 6rem;
-    }
-
-    #contact > div:nth-child(3) {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-    }
-
-    .provider-page > header .medium-8, #providers h2 {
-        margin-top: 2rem;
     }
 
 }
@@ -790,6 +731,14 @@ body > .callout .cell {
 
     /* Alignment */
 
+    body > header {
+        padding-bottom: 0;
+    }
+
+    #index {
+        padding-bottom: 0;
+    }
+
     #index h1 {
         margin-top: 3rem;
     }
@@ -809,6 +758,11 @@ body > .callout .cell {
 
     #contact > div:nth-child(2) {
         margin-top: 3rem;
+    }
+
+    #contact > div:nth-child(3) {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
     }
 
     form .input-group-button {
@@ -832,6 +786,10 @@ body > .callout .cell {
         padding-right: 2rem;
     }
 
+    .provider-page > header .medium-8, #providers h2 {
+        margin-top: 0;
+    }
+
     /* Navigation */
 
     .drop-down-ul {
@@ -841,7 +799,6 @@ body > .callout .cell {
     /* Media */
 
     .orbit-slide {
-        width: 100%;
         min-height: 36rem;
     }
    
@@ -889,7 +846,7 @@ body > .callout .cell {
         margin-top: 30%;
     }
 
-    #policies .cell-group > div.cell, .provider-page .cell-group > div.cell {
+    .cell-group-3 > div.cell, .provider-page .cell-group > div.cell {
         width: calc(33% - 3rem);
     }
 
@@ -928,10 +885,6 @@ body > .callout .cell {
     
     .orbit-slide:nth-child(3) {
         background: no-repeat bottom right url(../img/cherry-blossom-flowers.jpg); 
-    }
-    
-    .orbit-slide, body > header {
-        width: 100%;
     }
 
     .orbit-slide, #index {
