@@ -892,3 +892,9 @@ body > .callout .cell {
     }
     
 }
+
+@media screen and (min-width: 1700px) {
+    .grid-container {
+      width: 65%;
+    }
+  }
