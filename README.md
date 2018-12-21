@@ -3,6 +3,7 @@ Repo for probono website
 
 Project Title: Catalyst Behavioral Health Business Website
 Motivation: Probono website to provide clients and referral providers with quick and sufficient information about Catalyst's services and providers. Also the site is meant to provide forms of contact for the business and individual providers at Catalyst.
+
 Framework:    Foundation for Sites by ZURB
               Version 6.5.1
               foundation.zurb.com
